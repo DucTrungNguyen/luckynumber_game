@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lucky game </title>
+    </head>
+    <script src ="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('broadcast', function(data){document.writeln(data)})
+    </script>
+    <body>
+        <h1>This is backen</h1>
+    </body>
+
+</html>
